@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kelayakan Kenaikan Jabatan fungsional Dosen Institut teknologi Sains Bandung</title>
+
+    <!-- PANGGIL CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="loginPage">
+    <h2>Login Sistem Jafung</h2>
+    <form id="loginForm">
+        <label>Username</label>
+        <input type="text" id="username" required>
+
+        <label>Password</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- INPUT DATA -->
+<div class="container hidden" id="inputPage">
+    <h2>Input Data Dosen</h2>
+    <form id="inputForm">
+        <label>Nama Dosen</label>
+        <input type="text" id="nama" required>
+
+        <label>Angka Kredit</label>
+        <input type="number" id="kredit" required>
+
+        <button type="submit">Proses</button>
+    </form>
+</div>
+
+<!-- HASIL -->
+<div class="container hidden" id="resultPage">
+    <h2>Hasil Evaluasi Kelayakan Kenaikan Jabatan Fungsional</h2>
+
+    <div id="hasilBox" class="status-box">
+        <p><strong>Nama Dosen:</strong> <span id="hasilNama"></span></p>
+        <p><strong>Angka Kredit:</strong> <span id="hasilKredit"></span></p>
+        <p><strong>Status:</strong> <span id="hasilStatus"></span></p>
+    </div>
+
+    <button id="ulangBtn">Input Ulang</button>
+</div>
+
+<!-- PANGGIL JS -->
+<script src="script.js"></script>
+</body>
+</html>

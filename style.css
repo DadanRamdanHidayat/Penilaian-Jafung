@@ -1,0 +1,88 @@
+:root {                           /* Elemen root → tempat variabel CSS global */
+    --primary: #1f4e79;           /* Warna utama (biru akademik / identitas sistem) */
+    --secondary: #e9f1f8;         /* Warna latar belakang form */
+    --success-bg: #e8f6ef;        /* Background untuk status berhasil / Eligible */
+    --success-border: #2ecc71;    /* Warna garis kiri status Eligible (hijau) */
+    --danger-bg: #fdecea;         /* Background untuk status gagal / Not Eligible */
+    --danger-border: #e74c3c;     /* Warna garis kiri status Not Eligible (merah) */
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif; /* Mengatur font utama halaman */
+    background: linear-gradient(135deg, #f0f4f8, #ffffff); /* Memberi background gradient dari abu ke putih */
+    margin: 0; /* Menghapus margin default browser */
+    padding: 0; /* Menghapus padding default browser */
+}
+
+.container {
+    width: 800px; /* Lebar container tetap 620px */
+    height: 500px;
+    margin: 80px auto; /* Memberi jarak atas/bawah 80px dan tengah secara horizontal */
+    background: #ffffff; /* Latar belakang container putih */
+    padding: 35px 45px; /* Jarak dalam container: 35px atas/bawah, 45px kiri/kanan */
+    border-radius: 10px; /* Membuat sudut container membulat */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Memberi bayangan lembut */
+    border-top: 6px solid var(--primary); /* Garis tebal di atas dengan warna variabel primary */
+}
+
+h2 {
+    text-align: center; /* Judul rata tengah */
+    margin-bottom: 30px; /* Jarak bawah 30px */
+    color: var(--primary); /* Warna teks menggunakan variabel primary */
+}
+
+form {
+    background-color: var(--secondary); /* Latar belakang form menggunakan warna secondary */
+    padding: 25px; /* Jarak dalam form */
+    border-radius: 8px; /* Sudut form membulat */
+}
+
+label {
+    display: block; /* Membuat label tampil di baris baru */
+    margin-bottom: 6px; /* Jarak bawah label */
+    font-weight: 600; /* Tebal font label */
+}
+
+input {
+    width: 100%; /* Input menyesuaikan lebar container */
+    padding: 10px; /* Jarak dalam input */
+    margin-bottom: 18px; /* Jarak bawah input */
+    border-radius: 6px; /* Sudut input membulat */
+    border: 1px solid #ccd6dd; /* Garis batas input berwarna abu */
+}
+
+button {
+    width: 100%; /* Button menyesuaikan lebar container */
+    padding: 12px; /* Jarak dalam button */
+    background-color: var(--primary); /* Warna latar button primary */
+    color: #ffffff; /* Warna teks button putih */
+    border: none; /* Menghapus border default */
+    border-radius: 6px; /* Sudut button membulat */
+    font-size: 15px; /* Ukuran font */
+    font-weight: 600; /* Tebal font button */
+    cursor: pointer; /* Mengubah cursor saat hover menjadi pointer */
+}
+
+button:hover {
+    background-color: #163a5c; /* Warna button saat hover */
+}
+
+.status-box {
+    margin-top: 70px; /* Jarak atas status box */
+    padding: 18px; /* Jarak dalam status box */
+    border-radius: 8px; /* Sudut status box membulat */
+}
+
+.eligible {
+    background-color: var(--success-bg); /* Latar belakang untuk status eligible */
+    border-left: 6px solid var(--success-border); /* Garis kiri tebal untuk status eligible */
+}
+
+.not-eligible {
+    background-color: var(--danger-bg); /* Latar belakang untuk status tidak eligible */
+    border-left: 6px solid var(--danger-border); /* Garis kiri tebal untuk status tidak eligible */
+}
+
+.hidden {
+    display: none; /* Menyembunyikan elemen */
+}
